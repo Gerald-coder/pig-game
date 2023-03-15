@@ -168,3 +168,42 @@ main {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 578px) {
+  .dice {
+    width: 6rem;
+    height: 7rem;
+  }
+  .player {
+    flex: 30%;
+  }
+  .name {
+    font-size: calc(0.5rem, 5vw, 1rem);
+  }
+  .btn {
+    padding: 0.2rem 0.8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .btn--new {
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+  .btn--new {
+    top: 2rem;
+  }
+  .btn--roll {
+    left: 3rem;
+    top: 34.3rem;
+  }
+  .btn--hold {
+    position: absolute;
+    left: 5rem;
+    top: 29.1rem;
+  }
+}
